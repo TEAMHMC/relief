@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disaster Relief | Health Matters Clinic</title>
+<meta name="description" content="Health Matters Clinic's disaster relief response. Sixteen months after attending the Cal OES Regional Disaster Ready Summit for Los Angeles County, HMC deployed 198 volunteers in a single day for the L.A. Wildfire Relief Response on January 18, 2025.">
+<link rel="canonical" href="https://relief.healthmatters.clinic/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Disaster Relief | Health Matters Clinic">
+<meta property="og:description" content="198 volunteers, 1,540 service hours, one day. What the L.A. Wildfire Relief Response delivered, and what preparing beforehand made possible.">
+<meta property="og:url" content="https://relief.healthmatters.clinic/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Questrial&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/hmc-parallax.css">
+<link rel="stylesheet" href="./assets/site/hmc-buttons-1.0.3.css">
+
+<style>
+:root{
+  --hmc-primary:#2333df;
+  --hmc-primary-hover:#1a2ecc;
+  --hmc-secondary:#ff6e40;
+  --hmc-accent:#f9c74f;
+  --hmc-bg:#f5f3ef;
+  --hmc-text:#0a0a0a;
+  --hmc-muted:#2a2540;
+  --hmc-hero:#070707;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--hmc-bg);color:var(--hmc-text);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.measure{max-width:680px}
+h1,h2,h3,.display{font-family:'Questrial','Inter',sans-serif;font-weight:400}
+blockquote{margin:0}
+
+/* ===================== HERO ===================== */
+.hero{position:relative;background:var(--hmc-hero);min-height:100vh;height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-carousel{position:absolute;inset:0;z-index:0}
+.hero-slide{position:absolute;inset:0;background-color:#0a0a0a;background-size:cover;background-position:center 30%;opacity:0;transform:scale(1.04);transition:opacity 1.4s ease-in-out;filter:saturate(.95) contrast(1.03)}
+.hero-slide.active{opacity:1;animation:heroKenBurns 9s ease-out forwards}
+@keyframes heroKenBurns{from{transform:scale(1.04)}to{transform:scale(1.10)}}
+@media (prefers-reduced-motion:reduce){.hero-slide.active{animation:none;transform:scale(1.04)}}
+/* No wildfire photography exists on disk. The four hero slides are tonal fields,
+   not stand-in photographs, so nothing on this page can be mistaken for a
+   picture of the fires or of the people served. Replace with real hero
+   photography when it is shot and cleared. See README. */
+.hs-1{background-image:radial-gradient(120% 90% at 18% 12%,#3a2a12 0%,#120d06 58%,#070707 100%)}
+.hs-2{background-image:radial-gradient(115% 95% at 78% 22%,#1b2358 0%,#0c1029 55%,#070707 100%)}
+.hs-3{background-image:radial-gradient(120% 90% at 32% 78%,#4a3410 0%,#161007 60%,#070707 100%)}
+.hs-4{background-image:radial-gradient(125% 95% at 62% 60%,#241d3f 0%,#100d1e 58%,#070707 100%)}
+.hero-grain{position:absolute;inset:0;z-index:3;opacity:.055;pointer-events:none;background-size:160px;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,7,7,.74) 0%,rgba(7,7,7,.28) 38%,rgba(7,7,7,.92) 100%)}
+.hero-glow{position:absolute;left:-10%;bottom:-30%;width:70%;height:80%;z-index:1;pointer-events:none;background:radial-gradient(closest-side,rgba(35,61,255,.42),transparent 70%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding:clamp(48px,9vw,110px) 0 clamp(38px,6vw,72px)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-accent);margin:0 0 22px}
+
+.hero-title{color:#fff;font-size:clamp(46px,7.4vw,112px);line-height:.86;letter-spacing:-.02em;max-width:11ch;margin:0 0 26px}
+.hero-title em{font-style:normal;color:var(--hmc-accent)}
+.hero-tagline{color:rgba(255,255,255,.88);font-size:clamp(16px,1.7vw,20px);max-width:56ch;margin:0 0 34px;line-height:1.5}
+.hero-stats{display:flex;flex-wrap:wrap;gap:clamp(24px,5vw,60px);border-top:1px solid rgba(255,255,255,.22);padding-top:26px}
+.hstat b{display:block;font-family:'Questrial',sans-serif;font-size:clamp(28px,3.4vw,42px);color:#fff;line-height:1;font-variant-numeric:tabular-nums}
+.hstat span{display:block;margin-top:7px;font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+
+/* ===================== SECTIONS ===================== */
+section{padding:clamp(56px,8vw,110px) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-primary);margin:0 0 20px}
+.eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--hmc-accent)}
+h2{font-size:clamp(30px,4.6vw,58px);line-height:.98;letter-spacing:-.02em;margin:0 0 22px}
+h3{font-size:1.35rem;line-height:1.15;margin:0 0 10px}
+p{margin:0 0 18px}
+.lede{font-size:clamp(17px,1.9vw,21px);line-height:1.5;color:var(--hmc-muted)}
+.twoup{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:clamp(28px,4vw,56px);align-items:start}
+
+/* ===================== PLACEHOLDER BANDS ===================== */
+/* Styled exactly like SMO's photo bands, but explicitly labelled as empty.
+   Using SMO's Skid Row photography or MHO's event photography here would
+   present a different program as a wildfire response. */
+.block{width:calc(100% - clamp(28px,4vw,56px));margin:0 auto;border-radius:clamp(20px,2.6vw,34px);overflow:hidden}
+.photoband{position:relative;min-height:clamp(300px,46vw,540px);background-size:cover}
+.photoband .cap{position:absolute;left:0;right:0;bottom:0;padding:clamp(34px,5vw,56px) clamp(20px,3vw,34px) clamp(20px,3vw,30px);background:linear-gradient(180deg,transparent,rgba(7,7,7,.84));color:#fff;font-size:14px;font-weight:600}
+.photoband.placeholder{
+  min-height:clamp(220px,30vw,360px);
+  background:repeating-linear-gradient(135deg,#ece8e0 0 18px,#e4dfd5 18px 36px);
+  border:2px dashed rgba(10,10,10,.34);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(26px,4vw,44px);
+}
+.photoband.placeholder .ph-tag{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-primary);margin:0 0 12px}
+.photoband.placeholder .ph-title{font-family:'Questrial',sans-serif;font-size:clamp(20px,2.6vw,30px);line-height:1.1;margin:0 0 10px;max-width:22ch}
+.photoband.placeholder .ph-note{margin:0;font-size:.92rem;color:var(--hmc-muted);max-width:60ch}
+
+/* ===================== ARC ===================== */
+.arc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,2.6vw,32px);margin-top:44px}
+.arc-step{border-top:2px solid var(--hmc-accent);padding-top:18px}
+.arc-step .when{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--hmc-primary);display:block;margin-bottom:8px}
+.arc-step h3{font-size:1.15rem}
+.arc-step p{font-size:.93rem;color:var(--hmc-muted);margin:0}
+
+.method{background:var(--hmc-text);color:#fff;border-radius:26px;padding:clamp(24px,3vw,36px)}
+.method h3{color:var(--hmc-accent)}
+.method dl{display:grid;grid-template-columns:auto 1fr;gap:12px 22px;margin:0;font-size:.93rem}
+.method dt{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);padding-top:5px;white-space:nowrap}
+.method dd{margin:0;color:rgba(255,255,255,.92)}
+
+/* ===================== FIGURES ===================== */
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:clamp(14px,1.6vw,20px)}
+.finding{background:#fff;border:1px solid var(--hmc-text);border-radius:22px;padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+.finding .num{font-family:'Questrial',sans-serif;font-size:clamp(38px,4.6vw,54px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.finding p{margin:0;font-size:.95rem;color:var(--hmc-muted);line-height:1.5}
+.finding.pop{background:var(--hmc-accent)}
+.finding.deep{background:var(--hmc-primary);color:#fff}
+.finding.deep p{color:rgba(255,255,255,.9)}
+.finding.quote{background:#fff;justify-content:space-between;gap:16px;margin:0}
+.finding.quote p{font-family:'Questrial',sans-serif;font-size:clamp(1.02rem,1.45vw,1.24rem);line-height:1.35;color:var(--hmc-text);margin:0}
+.finding.quote cite{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--hmc-primary)}
+.finding.quote.dark{background:var(--hmc-text)}
+.finding.quote.dark p{color:#fff}
+.finding.quote.dark cite{color:var(--hmc-accent)}
+
+/* ===================== RANKED ===================== */
+.ranked{background:#fff;border:1px solid var(--hmc-text);border-radius:26px;padding:clamp(22px,3vw,34px)}
+.ranked h3{font-size:1.05rem;margin-bottom:6px}
+.ranked .sub{margin:0 0 12px;font-size:.86rem;color:var(--hmc-muted)}
+.row{padding:13px 0;border-bottom:1px solid #e6e2da}
+.row:last-child{border-bottom:0}
+.rowtop{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px}
+.rowtop .label{font-size:.97rem;font-weight:600}
+.rowtop .val{font-size:.9rem;font-weight:700;font-variant-numeric:tabular-nums}
+.track{height:12px;border:1px solid var(--hmc-text);border-radius:999px;overflow:hidden;background:#fff}
+.track i{display:block;height:100%;background:var(--hmc-accent);transform-origin:left}
+.row.top3 .track i{background:var(--hmc-primary)}
+
+/* ===================== HOW IT WORKED ===================== */
+.opsgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(14px,1.6vw,20px);margin-top:20px}
+.slist{background:#fff;border:1px solid var(--hmc-text);border-radius:22px;padding:24px}
+.slist h3{font-size:1.05rem;margin-bottom:12px}
+.slist ul{margin:0;padding-left:19px;font-size:.93rem;color:var(--hmc-muted);line-height:1.6}
+.slist li{margin-bottom:5px}
+.partners{background:var(--hmc-primary);color:#fff;border-radius:22px;padding:26px;margin-top:20px}
+.partners h3{color:var(--hmc-accent);font-size:1.05rem}
+.partners p{color:rgba(255,255,255,.9);font-size:.94rem;margin:0 0 12px}
+.partners ul{margin:0;padding-left:19px;color:rgba(255,255,255,.92);font-size:.93rem;line-height:1.6;columns:2;column-gap:32px}
+.partners li{margin-bottom:5px;break-inside:avoid}
+@media (max-width:640px){.partners ul{columns:1}}
+
+/* ===================== RECOVERY ===================== */
+.recovery{background:var(--hmc-text);color:#fff}
+.recovery h2{color:#fff}
+.recovery h2 em{font-style:normal;color:var(--hmc-accent)}
+.recovery .eyebrow{color:var(--hmc-accent)}
+.recovery .lede{color:rgba(255,255,255,.76)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,2.6vw,32px);margin-top:44px}
+.step{border-top:2px solid var(--hmc-accent);padding-top:18px}
+.step h3{color:#fff}
+.step p{font-size:.93rem;color:rgba(255,255,255,.72);margin:0}
+
+/* ===================== GET INVOLVED ===================== */
+.involve{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:clamp(14px,1.6vw,20px);margin-top:40px}
+.icard{background:#fff;border:1px solid var(--hmc-text);border-radius:24px;padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.icard.pop{background:var(--hmc-accent)}
+.icard .tag{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--hmc-primary)}
+.icard.pop .tag{color:var(--hmc-text)}
+.icard p{font-size:.94rem;color:var(--hmc-muted);margin:0;flex:1}
+.icard.pop p{color:var(--hmc-text)}
+.icard ul{margin:0;padding-left:19px;font-size:.92rem;color:var(--hmc-muted);line-height:1.55}
+.icard li{margin-bottom:5px}
+.shipbox{background:var(--hmc-primary);color:#fff;border-radius:22px;padding:26px;margin-top:20px}
+.shipbox h3{color:var(--hmc-accent);font-size:1.05rem}
+.shipbox p{color:rgba(255,255,255,.9);font-size:.94rem;margin:0 0 10px}
+.shipbox .addr{font-size:1.02rem;line-height:1.5;color:#fff}
+
+/* ===================== FAQ + FOOTER ===================== */
+.sitefoot{background:var(--hmc-text);color:rgba(255,255,255,.72)}
+.foot-inner{padding:clamp(48px,7vw,88px) 0 0}
+.faq-head{max-width:640px;margin-bottom:36px}
+.faq-title{font-family:'Questrial',sans-serif;font-size:clamp(28px,4vw,44px);color:#fff;margin:0 0 14px;line-height:1}
+.faq-intro{margin:0;font-size:.98rem;color:rgba(255,255,255,.66)}
+.faq-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(26px,4vw,52px)}
+.faq-group h5{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-accent);margin:0 0 12px}
+.faq-item{border-top:1px solid rgba(255,255,255,.16)}
+.faq-item:last-child{border-bottom:1px solid rgba(255,255,255,.16)}
+.faq-item summary{cursor:pointer;padding:15px 0;font-size:1rem;font-weight:600;color:#fff;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.25rem;line-height:1;color:var(--hmc-accent);flex:0 0 auto}
+.faq-item[open] summary::after{content:'\2212'}
+.faq-item summary:focus-visible{outline:2px solid var(--hmc-accent);outline-offset:3px}
+.faq-answer{padding:0 0 16px;font-size:.95rem;line-height:1.6;color:rgba(255,255,255,.72);max-width:60ch}
+.faq-answer p{margin:0 0 12px}
+.faq-answer p:last-child{margin:0}
+.faq-answer a{color:var(--hmc-accent)}
+.foot-brand{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;
+  margin-top:clamp(40px,6vw,72px);padding-top:32px;border-top:1px solid rgba(255,255,255,.16)}
+.foot-brand h4{font-family:'Questrial',sans-serif;font-size:1.5rem;color:#fff;margin:0 0 10px}
+.foot-brand p{margin:0 0 10px;font-size:.92rem;max-width:52ch}
+.foot-brand p:last-child{margin:0}
+.foot-serve{color:rgba(255,255,255,.55)}
+.foot-cols{display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px)}
+.foot-col h6{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0 0 12px}
+.foot-col a{display:block;color:rgba(255,255,255,.8);text-decoration:none;font-size:.93rem;margin-bottom:9px}
+.foot-col a:hover{color:var(--hmc-accent)}
+.foot-legal{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;
+  padding:26px 0 34px;margin-top:34px;border-top:1px solid rgba(255,255,255,.16);font-size:.85rem}
+.foot-legal a{color:rgba(255,255,255,.66);margin-right:18px}
+
+/* ===================== KINETIC ===================== */
+.kinetic-wrap{padding:clamp(30px,5vw,54px) 0;background:var(--hmc-bg);border-top:1px solid var(--hmc-text);border-bottom:1px solid var(--hmc-text)}
+
+footer{background:var(--hmc-text);color:rgba(255,255,255,.64);padding:44px 0;font-size:.87rem}
+footer a{color:var(--hmc-accent)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:20px;top:20px;z-index:99;background:#fff;color:#0a0a0a;padding:12px 18px;border-radius:999px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero hmc-parallax-hero">
+  <div class="hero-carousel" aria-hidden="true">
+    <div class="hero-slide hs-1 active"></div>
+    <div class="hero-slide hs-2"></div>
+    <div class="hero-slide hs-3"></div>
+    <div class="hero-slide hs-4"></div>
+  </div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <p class="hero-eyebrow">Disaster Relief</p>
+      <h1 class="hero-title">We prepared <em>before it happened.</em></h1>
+      <p class="hero-tagline">In September 2023, Health Matters Clinic sat in a room learning how the county's emergency response system fits together. Sixteen months later, on January 18, 2025, we put 198 volunteers into the field in a single day.</p>
+      <div class="cta-row">
+        <a data-hmc-label="See what one day delivered" class="hmc-btn hmc-btn-primary" href="#numbers">See what one day delivered</a>
+        <a data-hmc-label="What people asked for" class="hmc-btn hmc-btn-secondary" href="#needs">What people asked for</a>
+        <a data-hmc-label="Volunteer with us" class="hmc-btn hmc-btn-secondary" href="#join">Volunteer with us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>198</b><span>Volunteers</span></div>
+        <div class="hstat"><b>1,540</b><span>Service hours</span></div>
+        <div class="hstat"><b>120</b><span>Individuals and families assisted</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== PREPARED ===================== -->
+<section id="prepared">
+  <div class="wrap">
+    <div class="twoup">
+      <div data-reveal>
+        <p class="eyebrow">Preparedness</p>
+        <h2>Readiness is decided long before the smoke.</h2>
+        <p class="lede">A disaster response is not assembled on the day of the disaster. It is assembled out of relationships, phone numbers, and a working understanding of who does what, all of which have to exist before anyone needs them.</p>
+        <p>In September 2023, Health Matters Clinic participated in the Cal OES Regional Disaster Ready Summit for Los Angeles County, held at the Skirball Cultural Center. It was one of eight summits held across California, convening community organizations, emergency responders, tribal governments and local leaders.</p>
+        <p>The summit's stated objectives included growing community understanding of the emergency response system and connecting organizations with the local emergency response staff who run it. That is the whole point of attending one: you learn the shape of the system, and you meet the people inside it, at a moment when nothing is on fire.</p>
+        <p>Sixteen months later the Los Angeles wildfires arrived. On January 18, 2025, HMC ran the L.A. Wildfire Relief Response, deploying 198 volunteers alongside 36 partner organizations in a single day.</p>
+      </div>
+      <div class="method" data-reveal>
+        <h3>The summit, precisely</h3>
+        <dl>
+          <dt>Event</dt><dd>Cal OES Regional Disaster Ready Summit, Los Angeles County</dd>
+          <dt>Date</dt><dd>September 2023</dd>
+          <dt>Venue</dt><dd>Skirball Cultural Center, Los Angeles</dd>
+          <dt>Series</dt><dd>One of eight summits held across California</dd>
+          <dt>Convened</dt><dd>Community organizations, emergency responders, tribal governments and local leaders</dd>
+          <dt>Objectives</dt><dd>Grow community understanding of the emergency response system, and connect organizations with local emergency response staff</dd>
+          <dt>HMC's role</dt><dd>Attendee and participant. HMC is not a Cal OES certified, trained, or partner agency, and this page makes no such claim.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="arc">
+      <div class="arc-step" data-reveal>
+        <span class="when">September 2023</span>
+        <h3>Learn the system</h3>
+        <p>Attend the regional summit. Understand how county emergency response is structured and who staffs it.</p>
+      </div>
+      <div class="arc-step" data-reveal>
+        <span class="when">Sixteen months</span>
+        <h3>Keep the network warm</h3>
+        <p>Continue running mobile health outreach, street medicine, and wellness events with community partners across Los Angeles.</p>
+      </div>
+      <div class="arc-step" data-reveal>
+        <span class="when">January 2025</span>
+        <h3>Deploy</h3>
+        <p>The L.A. Wildfire Relief Response ran on January 18, 2025, from 8:00 AM to 8:00 PM. Twelve hours, 198 volunteers, 36 organizations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="block photoband placeholder" data-reveal>
+  <p class="ph-tag">Photography needed</p>
+  <p class="ph-title">Distribution day, wide establishing shot</p>
+  <p class="ph-note">No wildfire response photography exists in this repository. This band is deliberately empty rather than filled with imagery from a different Health Matters Clinic program. The README lists every shot required, in priority order.</p>
+</div>
+
+<!-- ===================== BY THE NUMBERS ===================== -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">January 18, 2025</p>
+      <h2>One day, by the numbers.</h2>
+      <p class="lede">Every figure below is taken from the L.A. Wildfire Relief Response impact report. Nothing here is an estimate, a projection, or a rounded-up total.</p>
+    </div>
+    <div class="findings">
+      <div class="finding" data-reveal><span class="num"><span class="impact-num">120</span></span><p>Individuals and families received direct assistance.</p></div>
+      <div class="finding pop" data-reveal><span class="num"><span class="impact-num">198</span></span><p>Volunteers deployed, including health professionals, logistics teams, and community coordinators.</p></div>
+      <div class="finding deep" data-reveal><span class="num">1,<span class="impact-num">540</span></span><p>Hours of service contributed by those volunteers across a twelve hour operating day.</p></div>
+      <div class="finding" data-reveal><span class="num"><span class="impact-num">36</span></span><p>Partner organizations collaborated to coordinate distribution and extend reach.</p></div>
+      <div class="finding pop" data-reveal><span class="num"><span class="impact-num">980</span></span><p>Essential items distributed, including food, hygiene kits, and medical supplies.</p></div>
+      <div class="finding" data-reveal><span class="num"><span class="impact-num">16</span></span><p>Deliveries made to displaced individuals and to organizations distributing onward to affected populations.</p></div>
+      <blockquote class="finding quote" data-reveal>
+        <p>&ldquo;The ability to deliver supplies to homebound seniors was crucial. Many had no way to access relief centers.&rdquo;</p>
+        <cite>Community partner organization</cite>
+      </blockquote>
+      <blockquote class="finding quote dark" data-reveal>
+        <p>&ldquo;I volunteered because I wanted to give back. Seeing the relief on people&rsquo;s faces when they received supplies made every moment worthwhile.&rdquo;</p>
+        <cite>Volunteer</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT PEOPLE ASKED FOR ===================== -->
+<section id="needs" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Relief item needs</p>
+      <h2>What people actually asked for.</h2>
+      <p class="lede">A survey of 29 participants ranked the items they needed most. The four items above 80 percent are baby wipes, disinfectant wipes, cleaning supplies, and bottled water. Nonperishable food ranks eighteenth, at 51.72 percent.</p>
+      <p>That ordering is the finding. Hygiene and cleaning supplies outranked food, and by a wide margin. It is not what most people picture when they picture disaster relief, and it is exactly what disaster relief turns out to be: people trying to make a displaced or smoke-damaged space liveable again, keep a baby clean, and stay well enough to deal with everything else.</p>
+      <p>It also explains why a food drive alone would have missed most of what this community was asking for. Respondents could select more than one item. Percentages are of the 29 people surveyed.</p>
+    </div>
+    <div class="twoup" style="margin-top:36px">
+      <div class="ranked" data-reveal>
+        <h3>Ranked needs, 1 to 12</h3>
+        <p class="sub">Blue bars mark the four items above 80 percent.</p>
+        <div class="row top3"><div class="rowtop"><span class="label">Baby wipes</span><span class="val">89.66%</span></div><div class="track"><i style="width:89.66%"></i></div></div>
+        <div class="row top3"><div class="rowtop"><span class="label">Disinfectant wipes</span><span class="val">86.21%</span></div><div class="track"><i style="width:86.21%"></i></div></div>
+        <div class="row top3"><div class="rowtop"><span class="label">Cleaning supplies</span><span class="val">86.21%</span></div><div class="track"><i style="width:86.21%"></i></div></div>
+        <div class="row top3"><div class="rowtop"><span class="label">Bottled water</span><span class="val">82.76%</span></div><div class="track"><i style="width:82.76%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Toilet paper</span><span class="val">79.31%</span></div><div class="track"><i style="width:79.31%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Feminine hygiene products</span><span class="val">75.86%</span></div><div class="track"><i style="width:75.86%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Paper towels</span><span class="val">72.41%</span></div><div class="track"><i style="width:72.41%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Deodorant</span><span class="val">68.97%</span></div><div class="track"><i style="width:68.97%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Pillows</span><span class="val">68.97%</span></div><div class="track"><i style="width:68.97%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Toys for children</span><span class="val">65.52%</span></div><div class="track"><i style="width:65.52%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Children's clothing and shoes</span><span class="val">65.52%</span></div><div class="track"><i style="width:65.52%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Diapers</span><span class="val">65.52%</span></div><div class="track"><i style="width:65.52%"></i></div></div>
+      </div>
+      <div class="ranked" data-reveal>
+        <h3>Ranked needs, 13 to 23</h3>
+        <p class="sub">Food, clothing, and school items sit below every hygiene category.</p>
+        <div class="row"><div class="rowtop"><span class="label">Soap, shampoo, toothpaste, toothbrushes</span><span class="val">65.52%</span></div><div class="track"><i style="width:65.52%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Luggage or duffel bags</span><span class="val">62.07%</span></div><div class="track"><i style="width:62.07%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Blankets</span><span class="val">58.62%</span></div><div class="track"><i style="width:58.62%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Towels</span><span class="val">58.62%</span></div><div class="track"><i style="width:58.62%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Women's clothing</span><span class="val">55.17%</span></div><div class="track"><i style="width:55.17%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Nonperishable food</span><span class="val">51.72%</span></div><div class="track"><i style="width:51.72%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Pet food and supplies</span><span class="val">44.83%</span></div><div class="track"><i style="width:44.83%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Backpacks</span><span class="val">41.38%</span></div><div class="track"><i style="width:41.38%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">School supplies</span><span class="val">37.93%</span></div><div class="track"><i style="width:37.93%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Men's clothing</span><span class="val">34.48%</span></div><div class="track"><i style="width:34.48%"></i></div></div>
+        <div class="row"><div class="rowtop"><span class="label">Baby formula</span><span class="val">31.03%</span></div><div class="track"><i style="width:31.03%"></i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KINETIC MARQUEE ===================== -->
+<div class="kinetic-wrap hmc-kinetic" aria-hidden="true">
+  <div class="hmc-kinetic-row">
+    <span>Disaster Relief</span><span class="o">Los Angeles</span><span class="accent">One Day</span><span>Disaster Relief</span><span class="o">Los Angeles</span><span class="accent">One Day</span>
+  </div>
+</div>
+
+<!-- ===================== HOW IT WORKED ===================== -->
+<section id="how">
+  <div class="wrap">
+    <div class="twoup">
+      <div data-reveal>
+        <p class="eyebrow">Operations</p>
+        <h2>How one day reached that many people.</h2>
+        <p class="lede">120 individuals and families sought support. Of them, 78 households required immediate relief items. Thirty-six nonprofit and community organizations coordinated distribution, which is what turned a single site into county-wide reach.</p>
+        <p>The event ran from 8:00 AM to 8:00 PM, twelve hours of continuous service. Volunteers included health professionals, logistics teams, and community coordinators. Sixteen deliveries went out to displaced individuals and to organizations who distributed onward, because the people most cut off from a relief site are the ones least able to travel to it.</p>
+        <p>In-kind donations exceeded $200,000. That figure is the reason 980 items could move in a day without a procurement budget behind them.</p>
+      </div>
+      <div class="method" data-reveal>
+        <h3>The day at a glance</h3>
+        <dl>
+          <dt>Date</dt><dd>January 18, 2025</dd>
+          <dt>Hours</dt><dd>8:00 AM to 8:00 PM, twelve hours of continuous service</dd>
+          <dt>Assisted</dt><dd>120 individuals and families</dd>
+          <dt>Households</dt><dd>78 required immediate relief items</dd>
+          <dt>Organizations</dt><dd>36 nonprofit and community organizations coordinated distribution</dd>
+          <dt>Volunteers</dt><dd>198, contributing 1,540 hours</dd>
+          <dt>Deliveries</dt><dd>16, to displaced individuals and to distributing organizations</dd>
+          <dt>Items</dt><dd>980 essential items distributed</dd>
+          <dt>In-kind</dt><dd>Donations exceeded $200,000</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="opsgrid">
+      <div class="slist" data-reveal>
+        <h3>What was donated</h3>
+        <ul>
+          <li>Hygiene kits, more than 280</li>
+          <li>PPE supplies, more than 285 masks, hand sanitizers, and first aid supplies</li>
+          <li>Clothing and blankets, more than 700 items</li>
+          <li>Baby and child essentials, more than 3,000 items including diapers, clothing, toys, food, and wipes</li>
+          <li>Hot meal vouchers, 25</li>
+          <li>Gift cards, more than 20</li>
+        </ul>
+      </div>
+      <div class="slist" data-reveal>
+        <h3>Who was reached</h3>
+        <ul>
+          <li>120 individuals and families sought support</li>
+          <li>78 households required immediate relief items</li>
+          <li>36 nonprofit and community organizations coordinated distribution</li>
+          <li>Homebound residents, including seniors with no way to reach a relief center, were served by delivery</li>
+        </ul>
+      </div>
+      <div class="slist" data-reveal>
+        <h3>Why partners mattered</h3>
+        <ul>
+          <li>One distribution site cannot cover Los Angeles County</li>
+          <li>Partner organizations already hold the trust of the neighborhoods they serve</li>
+          <li>Onward distribution reached people who never came to the site</li>
+          <li>Gift cards let families buy what their own situation actually required</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="partners" data-reveal>
+      <h3>Partners named in the response report</h3>
+      <p>The impact report names the following organizations alongside Health Matters Clinic, and notes that others contributed beyond this list.</p>
+      <ul>
+        <li>L.A. Care Health Plan</li>
+        <li>Blue Shield Promise Community Resource Centers</li>
+        <li>Center of Hope Church</li>
+        <li>Council of Black Nurses</li>
+        <li>Alzheimer's Association, California Southland Chapter</li>
+        <li>Cooking with Gabby</li>
+        <li>UC Irvine Joe C. Wen School of Population and Public Health</li>
+        <li>UC Irvine Center for Environmental Health Disparities Research</li>
+        <li>Advocates for African American Elders</li>
+        <li>Jenesse Center</li>
+        <li>Second Baptist Church</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="block photoband placeholder" data-reveal>
+  <p class="ph-tag">Photography needed</p>
+  <p class="ph-title">Sorting and staging, volunteers at work</p>
+  <p class="ph-note">A working shot of the distribution line, supply staging, or a delivery loadout would carry this section. Anyone identifiable needs a signed media release on file before publication.</p>
+</div>
+
+<!-- ===================== RECOVERY CONTINUES ===================== -->
+<section class="recovery" id="recovery">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Recovery continues</p>
+      <h2>The distribution day ended. <em>The recovery did not.</em></h2>
+      <p class="lede">A household that received supplies on January 18 was not finished with the fire on January 19. Displacement, lost work, insurance disputes and the mental health load of all three continue long after the last box is handed over.</p>
+      <p>Health Matters Clinic keeps its doors open to wildfire-affected communities through the programs it already runs. What follows describes what is on offer. No participation counts are published for this work yet, so none are claimed here.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal>
+        <h3>Unstoppable programming</h3>
+        <p>HMC's flagship curriculum for people rebuilding after disruption. Open to residents affected by the wildfires.</p>
+      </div>
+      <div class="step" data-reveal>
+        <h3>Mental health workshops</h3>
+        <p>Group workshops addressing stress, grief, and the aftermath of displacement, run by HMC's mental health team.</p>
+      </div>
+      <div class="step" data-reveal>
+        <h3>Wellness events</h3>
+        <p>Screenings, resources, and community events across Los Angeles County that anyone can attend without insurance, referral, or identification.</p>
+      </div>
+      <div class="step" data-reveal>
+        <h3>Digital tools</h3>
+        <p>HMC's free digital wellness tools stay available between events, for people who cannot get to one or are not ready to.</p>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a data-hmc-label="See upcoming events" class="hmc-btn hmc-btn-primary" href="https://www.healthmatters.clinic/events">See upcoming events</a>
+      <a data-hmc-label="Explore Unstoppable" class="hmc-btn hmc-btn-secondary" href="https://unstoppable.healthmatters.clinic">Explore Unstoppable</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GET INVOLVED ===================== -->
+<section id="join">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Join the work</p>
+      <h2>The next response is staffed before it is needed.</h2>
+      <p class="lede">198 volunteers turned out on one day in January because a volunteer program already existed to turn out. The way to be useful in the next emergency is to be trained and on the roster before it starts.</p>
+    </div>
+    <div class="involve">
+      <div class="icard" data-reveal>
+        <span class="tag">Train and deploy</span>
+        <h3>Become a volunteer</h3>
+        <p>Every HMC volunteer completes Community Mental Health Worker training, parts one and two. That onboarding is what makes a rapid call-up possible, because the training is already done when the call goes out.</p>
+        <ul>
+          <li>Training tracked in your volunteer record</li>
+          <li>Roles for clinical and non-clinical volunteers</li>
+          <li>Ongoing deployments across HMC programs, not disaster response alone</li>
+        </ul>
+        <div><a class="hmc-btn hmc-btn-primary" data-hmc-label="Start volunteer training" href="https://volunteer.healthmatters.clinic">Start volunteer training</a></div>
+      </div>
+      <div class="icard pop" data-reveal>
+        <span class="tag">Look first</span>
+        <h3>Take the tour</h3>
+        <p>New to Health Matters Clinic and not sure where you would fit? The tour walks through how volunteering works, what training involves, and which programs need which skills, before you commit to anything.</p>
+        <div><a class="hmc-btn hmc-btn-secondary" data-hmc-label="Take the tour" href="https://volunteer.healthmatters.clinic/tour">Take the tour</a></div>
+      </div>
+      <div class="icard" data-reveal>
+        <span class="tag">Fund the response</span>
+        <h3>Donate</h3>
+        <p>In-kind donations exceeding $200,000 carried the January response. Cash keeps supplies stocked between emergencies and keeps the recovery programming running after the news cycle moves on.</p>
+        <div><a class="hmc-btn hmc-btn-primary" data-hmc-label="Donate" href="https://www.healthmatters.clinic/donate">Donate</a></div>
+      </div>
+    </div>
+
+    <div class="opsgrid">
+      <div class="slist" data-reveal>
+        <h3>What the survey said to stock</h3>
+        <ul>
+          <li>Baby wipes and disinfectant wipes</li>
+          <li>Cleaning supplies</li>
+          <li>Bottled water</li>
+          <li>Toilet paper and paper towels</li>
+          <li>Feminine hygiene products</li>
+          <li>Deodorant, soap, shampoo, toothpaste, toothbrushes</li>
+          <li>Diapers</li>
+        </ul>
+      </div>
+      <div class="slist" data-reveal>
+        <h3>Also ranked highly</h3>
+        <ul>
+          <li>Pillows, blankets, and towels</li>
+          <li>Luggage or duffel bags</li>
+          <li>Children's clothing and shoes</li>
+          <li>Toys for children</li>
+          <li>Women's and men's clothing</li>
+          <li>Nonperishable food</li>
+          <li>Pet food and supplies</li>
+        </ul>
+      </div>
+      <div class="slist" data-reveal>
+        <h3>Coordinate with us first</h3>
+        <ul>
+          <li>Anything requiring a prescription or a license to distribute</li>
+          <li>Perishable food</li>
+          <li>Bulk pallets or anything needing storage</li>
+          <li>Gift cards, which are handled directly rather than shipped</li>
+        </ul>
+        <p style="margin:12px 0 0;font-size:.9rem;color:var(--hmc-muted)">Email contact@healthmatters.clinic before sending any of the above, so it matches what is needed and there is somewhere to put it.</p>
+      </div>
+    </div>
+
+    <div class="shipbox" data-reveal>
+      <h3>Where to send supplies</h3>
+      <p>Ship or drop off during business hours. Tell us it is coming so someone is there to receive it.</p>
+      <p class="addr">Health Matters Clinic<br>
+      Attention: Disaster Relief<br>
+      1360 S Figueroa St, Suite D390<br>
+      Los Angeles, CA 90015</p>
+      <p style="margin-top:12px">Questions: <a href="mailto:contact@healthmatters.clinic" style="color:var(--hmc-accent)">contact@healthmatters.clinic</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap foot-inner">
+
+    <div class="faq-head">
+      <h3 class="faq-title">Questions</h3>
+      <p class="faq-intro">The things people ask most often before they volunteer, donate, or ask us to respond.</p>
+    </div>
+
+    <div class="faq-groups">
+      <div class="faq-group">
+        <h5>The response</h5>
+        <details class="faq-item"><summary>What was the L.A. Wildfire Relief Response?</summary><div class="faq-answer">
+          <p>A one-day relief operation run by Health Matters Clinic on January 18, 2025, in response to the Los Angeles wildfires. It ran from 8:00 AM to 8:00 PM and assisted 120 individuals and families.</p>
+          <p>198 volunteers contributed 1,540 hours, 36 partner organizations coordinated distribution, 980 essential items went out, and 16 deliveries were made to people and organizations who could not reach the site.</p>
+        </div></details>
+        <details class="faq-item"><summary>What is Health Matters Clinic's relationship with Cal OES?</summary><div class="faq-answer">
+          <p>HMC participated in the Cal OES Regional Disaster Ready Summit for Los Angeles County in September 2023, at the Skirball Cultural Center. It was one of eight summits held across California for community organizations, emergency responders, tribal governments and local leaders.</p>
+          <p>That is attendance at a public convening. HMC is not certified, trained, credentialed, or partnered by Cal OES, and does not represent itself as any of those things.</p>
+        </div></details>
+        <details class="faq-item"><summary>Why did hygiene items outrank food?</summary><div class="faq-answer">
+          <p>Because that is what the 29 people surveyed said they needed. Baby wipes, disinfectant wipes, cleaning supplies and bottled water all ranked above 80 percent. Nonperishable food came in at 51.72 percent.</p>
+          <p>Households displaced or smoke-affected are trying to make a space liveable and stay well. Food assistance already has more established channels than sanitation supplies do.</p>
+        </div></details>
+        <details class="faq-item"><summary>Where do these numbers come from?</summary><div class="faq-answer">
+          <p>The L.A. Wildfire Relief Response impact report, published by Health Matters Clinic. Every count and percentage on this page traces to it. Nothing has been estimated, extrapolated, or rounded up.</p>
+        </div></details>
+      </div>
+
+      <div class="faq-group">
+        <h5>Volunteering</h5>
+        <details class="faq-item"><summary>Do I need to be a clinician?</summary><div class="faq-answer">
+          <p>No. The January response ran on health professionals, logistics teams, and community coordinators working together. Sorting, packing, delivery, intake and coordination are all non-clinical roles.</p>
+          <p>Clinical tasks are performed only by people licensed to perform them.</p>
+        </div></details>
+        <details class="faq-item"><summary>What training is required?</summary><div class="faq-answer">
+          <p>Every HMC volunteer completes Community Mental Health Worker training, parts one and two. Doing that before an emergency is what allows a rapid call-up when one arrives.</p>
+          <p>New to HMC? <a href="https://volunteer.healthmatters.clinic/tour">Take the tour</a> first, then start at <a href="https://volunteer.healthmatters.clinic">volunteer.healthmatters.clinic</a>.</p>
+        </div></details>
+        <details class="faq-item"><summary>Can I sign up only for disaster response?</summary><div class="faq-answer">
+          <p>Volunteers join Health Matters Clinic rather than a single event. Disaster response is intermittent by nature, so the roster is built and kept current through the programs that run year round, including mobile health outreach, street medicine, and wellness events.</p>
+        </div></details>
+      </div>
+
+      <div class="faq-group">
+        <h5>Giving and recovery</h5>
+        <details class="faq-item"><summary>What supplies are most useful?</summary><div class="faq-answer">
+          <p>The ranked list on this page is the answer, and it came from the affected community itself. Baby wipes, disinfectant wipes, cleaning supplies and bottled water sit at the top.</p>
+          <p>Anything prescription, perishable, or pallet sized needs a conversation first so it does not arrive unusable or unstorable.</p>
+        </div></details>
+        <details class="faq-item"><summary>What support is available now, after the wildfires?</summary><div class="faq-answer">
+          <p>Unstoppable programming, mental health workshops, wellness events, and HMC's free digital tools remain open to wildfire-affected residents. No participation figures are published for this work yet, so none are claimed on this page.</p>
+        </div></details>
+        <details class="faq-item"><summary>Is any of this free?</summary><div class="faq-answer">
+          <p>Yes. Every community-facing HMC service is free, with no insurance, referral, or identification required.</p>
+        </div></details>
+      </div>
+    </div>
+
+    <div class="foot-brand">
+      <div>
+        <h4>Health Matters Clinic</h4>
+        <p>A Los Angeles nonprofit advancing health equity so everyone has the opportunity to live their healthiest life. Founded in 2020, we have served more than 25,000 Angelenos through mobile health outreach, street medicine, wellness events, and mental health programs.</p>
+        <p class="foot-serve">Helping + Healing. We serve underserved communities, individuals experiencing homelessness, low-income families, LGBTQ+ individuals, immigrants, veterans, and others too often left behind by traditional healthcare systems.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h6>Get involved</h6>
+          <a href="#join">Volunteer</a>
+          <a href="https://www.healthmatters.clinic/donate">Donate</a>
+          <a href="https://volunteer.healthmatters.clinic/tour">Take the tour</a>
+          <a href="https://partner.healthmatters.clinic">Partner portal</a>
+        </div>
+        <div class="foot-col">
+          <h6>HMC</h6>
+          <a href="https://www.healthmatters.clinic">Main site</a>
+          <a href="https://www.healthmatters.clinic/programs">Programs</a>
+          <a href="https://www.healthmatters.clinic/events">Events</a>
+          <a href="https://directory.healthmatters.clinic">Resource directory</a>
+        </div>
+        <div class="foot-col">
+          <h6>Contact</h6>
+          <a href="mailto:contact@healthmatters.clinic">contact@healthmatters.clinic</a>
+          <a href="tel:+13239904325">(323) 990-4325</a>
+          <a href="https://www.healthmatters.clinic/contact-us">Contact form</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-legal">
+      <div>&copy; 2026 Health Matters Clinic. All rights reserved. 501(c)(3) Nonprofit.<br>1360 S Figueroa St, Suite D390, Los Angeles, CA 90015. EIN 85-3784250.</div>
+      <div>
+        <a href="https://www.healthmatters.clinic/privacy-policy">Privacy</a>
+        <a href="https://www.healthmatters.clinic/terms">Terms</a>
+        <a href="https://www.healthmatters.clinic/cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/vendor/gsap.min.js"></script>
+<script src="./assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="./assets/js/vendor/lenis.min.js"></script>
+<script src="./assets/js/hmc-immersive.js"></script>
+<script src="./assets/site/hmc-buttons-1.0.3.js"></script>
+<script>
+/* Ranked-need bars draw in on scroll. Uses IntersectionObserver so it works
+   whether or not the GSAP immersive layer is active (it is disabled inside the
+   Webflow iframe and under prefers-reduced-motion). */
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bars = document.querySelectorAll('.track i');
+  if (reduce || !('IntersectionObserver' in window)) return;
+  bars.forEach(function(b){ b.style.transform='scaleX(0)'; b.style.transition='transform 1s cubic-bezier(.2,.7,.3,1)'; });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.style.transform='scaleX(1)';
+      io.unobserve(e.target);
+    });
+  },{threshold:.35});
+  bars.forEach(function(b){ io.observe(b); });
+})();
+</script>
+<script>
+/* Hero carousel. Same structure and 5500ms cadence as SMO, MHO and Unstoppable. */
+(function(){
+  var slides = document.querySelectorAll('.hero-slide');
+  if (slides.length < 2) return;
+  var i = 0;
+  function start(){
+    setInterval(function(){
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+    }, 5500);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
+</body>
+</html>
