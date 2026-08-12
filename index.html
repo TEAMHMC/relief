@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Disaster Relief | Health Matters Clinic</title>
-<meta name="description" content="Health Matters Clinic's disaster relief response. Sixteen months after attending the Cal OES Regional Disaster Ready Summit for Los Angeles County, HMC deployed 198 volunteers in a single day for the L.A. Wildfire Relief Response on January 18, 2025.">
+<meta name="description" content="Health Matters Clinic was founded in 2020, in the middle of a pandemic, and its earliest community work was disaster response. On January 18, 2025 it deployed 198 volunteers in one day for the L.A. Wildfire Relief Response.">
 <link rel="canonical" href="https://relief.healthmatters.clinic/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Disaster Relief | Health Matters Clinic">
-<meta property="og:description" content="198 volunteers, 1,540 service hours, one day. What the L.A. Wildfire Relief Response delivered, and what preparing beforehand made possible.">
+<meta property="og:description" content="Health Matters Clinic was born in a disaster and has been responding to them since. 198 volunteers, 1,540 service hours, one day in January 2025.">
 <meta property="og:url" content="https://relief.healthmatters.clinic/">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Questrial&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="./photos/bottled-water-pallets-staged.jpg" fetchpriority="high">
 <link rel="stylesheet" href="./assets/css/hmc-parallax.css">
 <link rel="stylesheet" href="./assets/site/hmc-buttons-1.0.3.css">
 
@@ -50,14 +51,17 @@ blockquote{margin:0}
 .hero-slide.active{opacity:1;animation:heroKenBurns 9s ease-out forwards}
 @keyframes heroKenBurns{from{transform:scale(1.04)}to{transform:scale(1.10)}}
 @media (prefers-reduced-motion:reduce){.hero-slide.active{animation:none;transform:scale(1.04)}}
-/* No wildfire photography exists on disk. The four hero slides are tonal fields,
-   not stand-in photographs, so nothing on this page can be mistaken for a
-   picture of the fires or of the people served. Replace with real hero
-   photography when it is shot and cleared. See README. */
-.hs-1{background-image:radial-gradient(120% 90% at 18% 12%,#3a2a12 0%,#120d06 58%,#070707 100%)}
-.hs-2{background-image:radial-gradient(115% 95% at 78% 22%,#1b2358 0%,#0c1029 55%,#070707 100%)}
-.hs-3{background-image:radial-gradient(120% 90% at 32% 78%,#4a3410 0%,#161007 60%,#070707 100%)}
-.hs-4{background-image:radial-gradient(125% 95% at 62% 60%,#241d3f 0%,#100d1e 58%,#070707 100%)}
+/* Real photography from the January 18, 2025 distribution day, shot on a phone in
+   portrait 3:4. Cover-cropping a 3:4 frame into a landscape hero shows roughly the
+   middle band of the image, so the four slides here are deliberately the frames
+   whose subject is staged supply at scale rather than a person. Each
+   background-position is set below the point where anyone appears in the frame, so
+   the crop excludes people entirely instead of slicing through them. The frames
+   with volunteers in them run uncropped as figures further down the page. */
+.hs-1{background-image:url("./photos/bottled-water-pallets-staged.jpg");background-position:center 45%}
+.hs-2{background-image:url("./photos/hygiene-and-feminine-products-tables.jpg");background-position:center 50%}
+.hs-3{background-image:url("./photos/sorted-mens-clothing-and-shoes.jpg");background-position:center 46%}
+.hs-4{background-image:url("./photos/cleaning-and-household-supplies-tables.jpg");background-position:center 55%}
 .hero-grain{position:absolute;inset:0;z-index:3;opacity:.055;pointer-events:none;background-size:160px;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,7,7,.74) 0%,rgba(7,7,7,.28) 38%,rgba(7,7,7,.92) 100%)}
 .hero-glow{position:absolute;left:-10%;bottom:-30%;width:70%;height:80%;z-index:1;pointer-events:none;background:radial-gradient(closest-side,rgba(35,61,255,.42),transparent 70%)}
@@ -82,23 +86,19 @@ p{margin:0 0 18px}
 .lede{font-size:clamp(17px,1.9vw,21px);line-height:1.5;color:var(--hmc-muted)}
 .twoup{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:clamp(28px,4vw,56px);align-items:start}
 
-/* ===================== PLACEHOLDER BANDS ===================== */
-/* Styled exactly like SMO's photo bands, but explicitly labelled as empty.
-   Using SMO's Skid Row photography or MHO's event photography here would
-   present a different program as a wildfire response. */
-.block{width:calc(100% - clamp(28px,4vw,56px));margin:0 auto;border-radius:clamp(20px,2.6vw,34px);overflow:hidden}
-.photoband{position:relative;min-height:clamp(300px,46vw,540px);background-size:cover}
-.photoband .cap{position:absolute;left:0;right:0;bottom:0;padding:clamp(34px,5vw,56px) clamp(20px,3vw,34px) clamp(20px,3vw,30px);background:linear-gradient(180deg,transparent,rgba(7,7,7,.84));color:#fff;font-size:14px;font-weight:600}
-.photoband.placeholder{
-  min-height:clamp(220px,30vw,360px);
-  background:repeating-linear-gradient(135deg,#ece8e0 0 18px,#e4dfd5 18px 36px);
-  border:2px dashed rgba(10,10,10,.34);
-  display:flex;flex-direction:column;justify-content:center;
-  padding:clamp(26px,4vw,44px);
-}
-.photoband.placeholder .ph-tag{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-primary);margin:0 0 12px}
-.photoband.placeholder .ph-title{font-family:'Questrial',sans-serif;font-size:clamp(20px,2.6vw,30px);line-height:1.1;margin:0 0 10px;max-width:22ch}
-.photoband.placeholder .ph-note{margin:0;font-size:.92rem;color:var(--hmc-muted);max-width:60ch}
+/* ===================== PHOTO GRIDS ===================== */
+/* SMO and MHO run some imagery as full-bleed bands with background-size:cover,
+   which works there because those frames are landscape. Every photograph in this
+   repository is a portrait 3:4 phone frame, and cover-cropping one into a wide band
+   leaves a thin horizontal slice with people clipped at the top and bottom edges.
+   So these run as figures at their natural aspect ratio inside a grid, matching
+   MHO's .carefig treatment: nothing is cropped, nobody loses the top of their head,
+   and each frame carries its own caption. */
+.block{width:calc(100% - clamp(28px,4vw,56px));margin:0 auto}
+.photogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:clamp(14px,1.6vw,20px)}
+.pfig{margin:0;background:#fff;border:1px solid var(--hmc-text);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.pfig img{width:100%;height:auto;display:block}
+.pfig figcaption{padding:16px 18px 18px;font-size:.88rem;line-height:1.5;color:var(--hmc-muted);border-top:1px solid var(--hmc-text);flex:1}
 
 /* ===================== ARC ===================== */
 .arc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,2.6vw,32px);margin-top:44px}
@@ -201,10 +201,10 @@ p{margin:0 0 18px}
 .faq-answer a{color:var(--hmc-accent)}
 .foot-brand{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;
   margin-top:clamp(40px,6vw,72px);padding-top:32px;border-top:1px solid rgba(255,255,255,.16)}
-.foot-brand h4{font-family:'Questrial',sans-serif;font-size:1.5rem;color:#fff;margin:0 0 10px}
-.foot-brand p{margin:0 0 10px;font-size:.92rem;max-width:52ch}
-.foot-brand p:last-child{margin:0}
-.foot-serve{color:rgba(255,255,255,.55)}
+.foot-logo{display:inline-block;line-height:0;margin:0 0 14px}
+.foot-logo img{display:block;width:56px;height:56px}
+.foot-logo:focus-visible{outline:2px solid var(--hmc-accent);outline-offset:3px}
+.foot-brand p{margin:0;font-size:.92rem;max-width:44ch}
 .foot-cols{display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px)}
 .foot-col h6{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0 0 12px}
 .foot-col a{display:block;color:rgba(255,255,255,.8);text-decoration:none;font-size:.93rem;margin-bottom:9px}
@@ -239,17 +239,12 @@ footer a{color:var(--hmc-accent)}
   <div class="hero-inner">
     <div class="wrap">
       <p class="hero-eyebrow">Disaster Relief</p>
-      <h1 class="hero-title">We prepared <em>before it happened.</em></h1>
-      <p class="hero-tagline">In September 2023, Health Matters Clinic sat in a room learning how the county's emergency response system fits together. Sixteen months later, on January 18, 2025, we put 198 volunteers into the field in a single day.</p>
+      <h1 class="hero-title">We were <em>born to respond.</em></h1>
+      <p class="hero-tagline">Health Matters Clinic was founded in 2020, in the middle of a pandemic. Our earliest community work was disaster response. On January 18, 2025 we put 198 volunteers into the field in a single day.</p>
       <div class="cta-row">
         <a data-hmc-label="See what one day delivered" class="hmc-btn hmc-btn-primary" href="#numbers">See what one day delivered</a>
         <a data-hmc-label="What people asked for" class="hmc-btn hmc-btn-secondary" href="#needs">What people asked for</a>
         <a data-hmc-label="Volunteer with us" class="hmc-btn hmc-btn-secondary" href="#join">Volunteer with us</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hstat"><b>198</b><span>Volunteers</span></div>
-        <div class="hstat"><b>1,540</b><span>Service hours</span></div>
-        <div class="hstat"><b>120</b><span>Individuals and families assisted</span></div>
       </div>
     </div>
   </div>
@@ -257,56 +252,70 @@ footer a{color:var(--hmc-accent)}
 
 <main id="main">
 
-<!-- ===================== PREPARED ===================== -->
-<section id="prepared">
+<!-- ===================== BORN TO RESPOND ===================== -->
+<section id="born">
   <div class="wrap">
     <div class="twoup">
       <div data-reveal>
-        <p class="eyebrow">Preparedness</p>
-        <h2>Readiness is decided long before the smoke.</h2>
-        <p class="lede">A disaster response is not assembled on the day of the disaster. It is assembled out of relationships, phone numbers, and a working understanding of who does what, all of which have to exist before anyone needs them.</p>
-        <p>In September 2023, Health Matters Clinic participated in the Cal OES Regional Disaster Ready Summit for Los Angeles County, held at the Skirball Cultural Center. It was one of eight summits held across California, convening community organizations, emergency responders, tribal governments and local leaders.</p>
-        <p>The summit's stated objectives included growing community understanding of the emergency response system and connecting organizations with the local emergency response staff who run it. That is the whole point of attending one: you learn the shape of the system, and you meet the people inside it, at a moment when nothing is on fire.</p>
-        <p>Sixteen months later the Los Angeles wildfires arrived. On January 18, 2025, HMC ran the L.A. Wildfire Relief Response, deploying 198 volunteers alongside 36 partner organizations in a single day.</p>
+        <p class="eyebrow">Born to respond</p>
+        <h2>The first disaster we answered was the one we were founded in.</h2>
+        <p class="lede">Health Matters Clinic opened in 2020, at the height of COVID-19. Nobody filed that work under disaster response at the time. In substance, that is what it was.</p>
+        <p>The earliest HMC events were community days that put several kinds of help in one place on one afternoon. COVID-19 testing. Vaccinations. Health screenings. Mental health support. And access to digital devices.</p>
+        <p>The devices are the part people forget. In 2020 a working device was the only way to see a clinician, because care had moved to telehealth. It was the only way to search for work and, for a lot of people, the only way to do the work. It was the only way a child could attend school. A household without one was not inconvenienced. It was cut off from care, from income and from education at the same time, for as long as the closures held. Putting a device into someone's hands was medical access, employment access and schooling in a single motion.</p>
+        <p>Three years later a state agency asked HMC to sit at the preparedness table. In September 2023 the California Governor's Office of Emergency Services, Cal OES, invited HMC to participate in its Regional Disaster Ready Summit for Los Angeles County, held on September 27 at the Skirball Cultural Center. It was one of eight summits Cal OES ran across the state that month. HMC attended and participated. It holds no Cal OES certification, credential or partnership, and claims none.</p>
+        <p>Then a third kind of disaster. On January 18, 2025, with the Los Angeles wildfires still burning, HMC ran the L.A. Wildfire Relief Response. 198 volunteers, 36 partner organizations, one day. That response was the third instance of a pattern, not the beginning of one.</p>
       </div>
       <div class="method" data-reveal>
         <h3>The summit, precisely</h3>
         <dl>
-          <dt>Event</dt><dd>Cal OES Regional Disaster Ready Summit, Los Angeles County</dd>
-          <dt>Date</dt><dd>September 2023</dd>
+          <dt>Agency</dt><dd>California Governor's Office of Emergency Services, Cal OES, a state agency</dd>
+          <dt>Event</dt><dd>Regional Disaster Ready Summit, Los Angeles County</dd>
+          <dt>Date</dt><dd>September 27, 2023</dd>
           <dt>Venue</dt><dd>Skirball Cultural Center, Los Angeles</dd>
-          <dt>Series</dt><dd>One of eight summits held across California</dd>
-          <dt>Convened</dt><dd>Community organizations, emergency responders, tribal governments and local leaders</dd>
-          <dt>Objectives</dt><dd>Grow community understanding of the emergency response system, and connect organizations with local emergency response staff</dd>
-          <dt>HMC's role</dt><dd>Attendee and participant. HMC is not a Cal OES certified, trained, or partner agency, and this page makes no such claim.</dd>
+          <dt>Series</dt><dd>One of eight summits Cal OES held across California that month</dd>
+          <dt>Convened</dt><dd>Community-based organizations, local governments, state partners and other stakeholders, more than 650 people across the eight summits</dd>
+          <dt>Objectives</dt><dd>Grow community understanding of the emergency response system, and connect community organizations with the local emergency response staff who run it</dd>
+          <dt>HMC's role</dt><dd>Invited by Cal OES to participate. Attendee and participant. HMC is not a Cal OES certified, trained, credentialed, or partner agency, and this page makes no such claim.</dd>
+          <dt>Source</dt><dd><a href="https://news.caloes.ca.gov/ready-summits/" style="color:var(--hmc-accent)">Cal OES, Regional Disaster Ready Summits</a></dd>
         </dl>
       </div>
     </div>
 
     <div class="arc">
       <div class="arc-step" data-reveal>
-        <span class="when">September 2023</span>
-        <h3>Learn the system</h3>
-        <p>Attend the regional summit. Understand how county emergency response is structured and who staffs it.</p>
+        <span class="when">2020 onward</span>
+        <h3>Born in a disaster</h3>
+        <p>Community events delivering COVID-19 testing, vaccinations, health screenings, mental health support, and access to digital devices, when a device was the only route to care, work and school.</p>
       </div>
       <div class="arc-step" data-reveal>
-        <span class="when">Sixteen months</span>
-        <h3>Keep the network warm</h3>
-        <p>Continue running mobile health outreach, street medicine, and wellness events with community partners across Los Angeles.</p>
+        <span class="when">September 2023</span>
+        <h3>Invited to the state table</h3>
+        <p>Cal OES invited HMC to participate in the Regional Disaster Ready Summit for Los Angeles County at the Skirball Cultural Center, one of eight held statewide.</p>
       </div>
       <div class="arc-step" data-reveal>
         <span class="when">January 2025</span>
-        <h3>Deploy</h3>
+        <h3>Another kind of disaster</h3>
         <p>The L.A. Wildfire Relief Response ran on January 18, 2025, from 8:00 AM to 8:00 PM. Twelve hours, 198 volunteers, 36 organizations.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="block photoband placeholder" data-reveal>
-  <p class="ph-tag">Photography needed</p>
-  <p class="ph-title">Distribution day, wide establishing shot</p>
-  <p class="ph-note">No wildfire response photography exists in this repository. This band is deliberately empty rather than filled with imagery from a different Health Matters Clinic program. The README lists every shot required, in priority order.</p>
+<div class="block" data-reveal>
+  <div class="photogrid">
+    <figure class="pfig">
+      <img src="./photos/bottled-water-pallets-staged.jpg" alt="Stacked cases of bottled water, Gatorade and nutritional shakes filling the corner of a gymnasium, with cardboard cartons of canned goods on the floor in front" width="1500" height="2000" loading="lazy">
+      <figcaption>Drinking water staged against the gym wall, alongside electrolyte drinks and cases of nutritional shakes. Bottled water ranked fourth of twenty-three items in the community survey, at 82.76 percent.</figcaption>
+    </figure>
+    <figure class="pfig">
+      <img src="./photos/sorted-mens-clothing-and-shoes.jpg" alt="Folding tables stacked with folded shirts and trousers behind hand-lettered paper signs reading men's tops shirts medium, men's tops shirts small and men's pants, with dozens of pairs of shoes lined up in rows on the floor" width="1500" height="2000" loading="lazy">
+      <figcaption>Clothing sorted to size and labelled by hand, with shoes laid out in rows on the floor so people could find a pair that fit. Men's clothing ranked twenty-second of twenty-three, at 34.48 percent, and was stocked anyway.</figcaption>
+    </figure>
+    <figure class="pfig">
+      <img src="./photos/nonperishable-food-tables.jpg" alt="Long tables of shelf-stable food, including canned goods, crackers, granola bars, fruit snacks and instant noodles, with a hand-lettered paper sign reading food and open cartons of packaged cookies on the floor" width="1500" height="2000" loading="lazy">
+      <figcaption>The food tables: canned goods, crackers, granola bars, fruit pouches and instant noodles. Nonperishable food ranked eighteenth, at 51.72 percent, below every hygiene category on the list.</figcaption>
+    </figure>
+  </div>
 </div>
 
 <!-- ===================== BY THE NUMBERS ===================== -->
@@ -474,10 +483,25 @@ footer a{color:var(--hmc-accent)}
   </div>
 </section>
 
-<div class="block photoband placeholder" data-reveal>
-  <p class="ph-tag">Photography needed</p>
-  <p class="ph-title">Sorting and staging, volunteers at work</p>
-  <p class="ph-note">A working shot of the distribution line, supply staging, or a delivery loadout would carry this section. Anyone identifiable needs a signed media release on file before publication.</p>
+<div class="block" data-reveal>
+  <div class="photogrid">
+    <figure class="pfig">
+      <img src="./photos/volunteers-sorting-donated-clothing.jpg" alt="Two volunteers standing at clothing tables in a gymnasium, one behind stacks of folded sweatshirts and the other holding up a grey hooded sweatshirt while wearing work gloves, with a rail of hanging jackets between them" width="1500" height="2000" loading="lazy">
+      <figcaption>Volunteers working the clothing tables, checking a garment before it goes out on the rail. Sorting, folding and staffing tables are non-clinical roles, and most of the 1,540 service hours went into work like this.</figcaption>
+    </figure>
+    <figure class="pfig">
+      <img src="./photos/hygiene-and-feminine-products-tables.jpg" alt="Open cartons of menstrual pads and tampons in the foreground, with a long table behind them holding flushable wipes, hand sanitiser, disposable gloves, toiletries and boxed portable heaters, and people browsing clothing tables in the background" width="1500" height="2000" loading="lazy">
+      <figcaption>Cartons of menstrual products in front of a table of flushable wipes, sanitiser, gloves and toiletries. Feminine hygiene products ranked sixth in the survey, at 75.86 percent.</figcaption>
+    </figure>
+    <figure class="pfig">
+      <img src="./photos/cleaning-and-household-supplies-tables.jpg" alt="A folding table holding disinfecting wipes, spray cleaners, sponges, laundry detergent jugs and boxes of freezer and sandwich bags, with stacks of folded blankets and towels on tables behind it" width="1500" height="2000" loading="lazy">
+      <figcaption>Cleaning and household supplies: disinfecting wipes, spray cleaner, sponges, detergent and storage bags. Disinfectant wipes and cleaning supplies both ranked at 86.21 percent, second and third of twenty-three items.</figcaption>
+    </figure>
+    <figure class="pfig">
+      <img src="./photos/pet-food-and-supplies-table.jpg" alt="A table of tinned dog and cat food stacked in rows beside bags of dry pet food, pet bowls and a box hand-labelled dog toys, with tables of blankets and clothing in the background" width="1500" height="2000" loading="lazy">
+      <figcaption>Tinned and dry pet food, bowls, and a box hand-labelled for dog toys. Pet food and supplies ranked nineteenth, at 44.83 percent, because people evacuate with their animals.</figcaption>
+    </figure>
+  </div>
 </div>
 
 <!-- ===================== RECOVERY CONTINUES ===================== -->
@@ -615,8 +639,8 @@ footer a{color:var(--hmc-accent)}
           <p>198 volunteers contributed 1,540 hours, 36 partner organizations coordinated distribution, 980 essential items went out, and 16 deliveries were made to people and organizations who could not reach the site.</p>
         </div></details>
         <details class="faq-item"><summary>What is Health Matters Clinic's relationship with Cal OES?</summary><div class="faq-answer">
-          <p>HMC participated in the Cal OES Regional Disaster Ready Summit for Los Angeles County in September 2023, at the Skirball Cultural Center. It was one of eight summits held across California for community organizations, emergency responders, tribal governments and local leaders.</p>
-          <p>That is attendance at a public convening. HMC is not certified, trained, credentialed, or partnered by Cal OES, and does not represent itself as any of those things.</p>
+          <p>Cal OES is the California Governor's Office of Emergency Services, a state agency. It invited HMC to participate in its <a href="https://news.caloes.ca.gov/ready-summits/">Regional Disaster Ready Summit</a> for Los Angeles County on September 27, 2023, at the Skirball Cultural Center. It was one of eight summits held across California that month for community-based organizations, local governments and state partners.</p>
+          <p>HMC accepted the invitation, attended and participated. HMC is not certified, trained, credentialed, or partnered by Cal OES, and does not represent itself as any of those things.</p>
         </div></details>
         <details class="faq-item"><summary>Why did hygiene items outrank food?</summary><div class="faq-answer">
           <p>Because that is what the 29 people surveyed said they needed. Baby wipes, disinfectant wipes, cleaning supplies and bottled water all ranked above 80 percent. Nonperishable food came in at 51.72 percent.</p>
@@ -659,9 +683,8 @@ footer a{color:var(--hmc-accent)}
 
     <div class="foot-brand">
       <div>
-        <h4>Health Matters Clinic</h4>
-        <p>A Los Angeles nonprofit advancing health equity so everyone has the opportunity to live their healthiest life. Founded in 2020, we have served more than 25,000 Angelenos through mobile health outreach, street medicine, wellness events, and mental health programs.</p>
-        <p class="foot-serve">Helping + Healing. We serve underserved communities, individuals experiencing homelessness, low-income families, LGBTQ+ individuals, immigrants, veterans, and others too often left behind by traditional healthcare systems.</p>
+        <a class="foot-logo" href="https://www.healthmatters.clinic"><img src="./assets/site/hmc-icon-512.png" alt="Health Matters Clinic" width="56" height="56" loading="lazy"></a>
+        <p>Health Matters Clinic is a Los Angeles nonprofit advancing health equity so everyone has the opportunity to live their healthiest life. Helping + Healing since 2020.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col">

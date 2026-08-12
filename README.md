@@ -32,24 +32,42 @@ Every figure on this page comes from HMC's published L.A. Wildfire Relief Respon
 impact report covering the January 18, 2025 distribution day. Nothing is estimated,
 extrapolated, or rounded. If you change a number, change it to match the report.
 
-One accuracy note that matters: Health Matters Clinic participated in and attended
-the Cal OES Regional Disaster Ready Summit for Los Angeles County in September 2023.
-The page must not describe that as training, certification, credentialing, or a
-partnership, because it was none of those. The FAQ states this plainly and should
-stay.
+Two accuracy notes that matter.
+
+Cal OES is the California Governor's Office of Emergency Services, a state agency. It
+invited Health Matters Clinic to participate in its Regional Disaster Ready Summit for
+Los Angeles County on September 27, 2023, at the Skirball Cultural Center, one of eight
+summits held statewide that month. Source: https://news.caloes.ca.gov/ready-summits/
+The page may say invited, attended, and participated. It must not describe that as
+training, certification, credentialing, or a partnership, because it was none of those.
+The FAQ states this plainly and should stay.
+
+HMC was founded in 2020 and its earliest community work was disaster response in
+substance: COVID-19 testing, vaccinations, health screenings, mental health support, and
+access to digital devices. Do not upgrade that into a claim that HMC was a designated or
+official disaster responder in 2020. It was not.
 
 House style: no em dashes, no emojis, no invented figures, quotes, partner names, or
 outcomes. No claim of SOC 2 or HIPAA certification.
 
 ## Photography
 
-There is no photography in this repository yet. Two `.photoband.placeholder` bands
-are marked with a dashed border and a visible label so they are not mistaken for
-finished design, and the hero carousel runs tonal gradient panels rather than images.
+`photos/` holds seven frames from the January 18, 2025 distribution day. All are phone
+portrait 3:4 at 1500x2000, each under 400KB. The hero carousel uses four of them as
+`background-size:cover` slides; all seven run as `.pfig` figures in two `.photogrid`
+blocks.
+
+Cover-cropping a 3:4 frame into a wide band shows only the middle band of the image and
+has already cost us the tops of people's heads once. So the hero slides are limited to
+frames whose subject is staged supply, with `background-position` set below the point
+where anyone appears, and every frame containing volunteers runs uncropped as a figure at
+its natural aspect ratio. If you add a photograph with a person near an edge, it goes in
+a `.photogrid`, never in the hero.
 
 Any photograph added here needs a signed media release for anyone identifiable, must
 not identify a recipient's household, address, or vehicle plate, and must come from
-this program rather than another HMC program.
+this program rather than another HMC program. Write the caption from what is actually in
+the frame. Do not guess.
 
 ## Animation hooks
 
